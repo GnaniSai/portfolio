@@ -246,29 +246,61 @@ section {
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: space-around;
   flex-direction: column;
   align-items: center;
 }
 .project-cards {
   display: flex;
   justify-content: center;
-  align-items: center;
-  width: 80%;
-  gap: 20px;
+  width: 100%;
 }
 .card {
-  width: 300px;
-  height: 300px;
+  width: 80%;
+  font-size: 13px;
   border: 3px solid black;
   border-radius: 20px;
   background-color: whitesmoke;
   cursor: pointer;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  background-color: #777171;
+  color: white;
 }
-
+.project-desc {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+.tech-stack {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  align-self: flex-start;
+}
+.tech-stack p {
+  padding: 5px 10px;
+  background-color: white;
+  color: black;
+  font-weight: 550;
+  border-radius: 10px;
+}
+.card-image {
+  width: 100%;
+}
+.card-image img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  object-position: top center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
 /*------------------------------------------- Project----------------------------------------- */
 
 /*------------------------------------------- Contact----------------------------------------- */
@@ -360,11 +392,15 @@ textarea {
   .intro-profile > img {
     width: 40%;
   }
-  .box{
+  .box {
     width: 95%;
   }
   .socials img {
     width: 25px;
     cursor: pointer;
+  }
+  .card {
+    width: 100%;
+    font-size: 12px;
   }
 }

@@ -1,0 +1,368 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+}
+
+/*------------------------------------------- Home ----------------------------------------- */
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15vh;
+  font-family: cursive;
+  position: fixed;
+  top: 0;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  border-radius: 20px;
+  padding: 10px 20px;
+  background-color: whitesmoke;
+  border-top: 3px solid red;
+  border-bottom: 3px solid blue;
+  border-left: 3px solid green;
+  border-right: 3px solid yellow;
+}
+.logo-img {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-img img {
+  width: 50px;
+  border-radius: 50px;
+}
+.nav-right{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.dark{
+  display: flex;
+}
+.nav-right ul {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.nav-right ul li {
+  list-style-type: none;
+}
+.nav-right ul li a {
+  font-family: cursive;
+  font-size: 1rem;
+  text-decoration: none;
+  color: black;
+  padding: 5px;
+  border: 2px solid transparent;
+}
+.nav-right ul li a:hover {
+  border-top: 2px solid red;
+  border-bottom: 2px solid blue;
+  border-left: 2px solid green;
+  border-right: 2px solid yellow;
+  border-radius: 10px;
+}
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 85vh;
+  font-family: sans-serif;
+  position: sticky;
+  top: 15vh;
+}
+#about,
+#contact,
+#projects{
+  margin-top: 15vh;
+}
+.box {
+  width:80%;
+  height: 90%;
+  border-radius: 20px;
+  padding: 15px 30px;
+  background-color: whitesmoke;
+  border:2px solid #0000003b;
+}
+
+
+.box h1 {
+  font-size: 3rem;
+  color: rgb(96, 95, 95);
+  text-transform: uppercase;
+}
+
+.intro {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  gap: 20px;
+}
+
+.intro-profile {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.intro-profile > img {
+  width: 25%;
+  border-top: 4px solid red;
+  border-bottom: 4px solid blue;
+  border-left: 4px solid green;
+  border-right: 4px solid yellow;
+  border-radius: 100%;
+}
+.intro-info h2 {
+  font-size: clamp(24px, 5vw, 48px);
+}
+.intro-info h2 span {
+  line-height: 1.2;
+  color: lightskyblue;
+}
+.intro-info .role {
+  font-size: clamp(20px, 3vw, 30px);;
+  color: rgb(40, 36, 36);
+}
+.intro-para {
+  padding: 15px 0;
+  font-size: clamp(12px, 2vw, 16px);
+  color: rgba(0, 0, 0, 0.732);
+}
+.connect-button{
+  display: flex;
+  gap: 10px;
+}
+.connect-button button {
+  background-color: lightskyblue;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 10px;
+}
+.connect-button button a{
+  text-decoration: none;
+  color: black;
+}
+.socials {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.socials img {
+  width: 35px;
+  cursor: pointer;
+}
+
+.dark-mode{
+  cursor: pointer;
+}
+
+/*------------------------------------------- Home----------------------------------------- */
+
+/*------------------------------------------- About----------------------------------------- */
+.about {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.about-con {
+  width: 100%;
+  gap: 20px;
+}
+.about-info{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-info p {
+  font-size: clamp(12px, 2vw, 16px);
+  margin-top: 10px;
+  color: rgba(0, 0, 0, 0.732);
+}
+
+.skills {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.skills h2 {
+  font-size: clamp(20px, 3vw, 35px);
+  margin-bottom: 10px;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.skill {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 30%;
+}
+
+.skill img {
+  width: 50px; 
+  height: 50px;
+  object-fit: contain;
+  margin-bottom: 8px;
+}
+
+.skill p {
+  font-weight: bold;
+  font-size: clamp(10px, 2vw, 16px);
+  color: #333;
+}
+
+
+
+/*------------------------------------------- About----------------------------------------- */
+
+/*------------------------------------------- Project----------------------------------------- */
+
+.projects {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+.project-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  gap: 20px;
+}
+.card {
+  width: 300px;
+  height: 300px;
+  border: 3px solid black;
+  border-radius: 20px;
+  background-color: whitesmoke;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*------------------------------------------- Project----------------------------------------- */
+
+/*------------------------------------------- Contact----------------------------------------- */
+.contact {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-form {
+  width: 60%;
+}
+form {
+  width: 100%;
+  display: flex;
+  justify-content: space-;
+  flex-direction: column;
+  gap: 20px;
+}
+.form-element {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.form-element div {
+  width: 100%;
+}
+input,
+textarea {
+  background-color: rgb(245, 244, 244);
+  border: 1px solid rgb(191, 217, 234);
+  border-radius: 10px;
+  padding: 10px 20px;
+  width: 100%;
+  color: black;
+  outline: none;
+}
+.submit-button {
+  align-self: center;
+}
+.submit-button button {
+  background-color: lightskyblue;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 10px;
+}
+/*------------------------------------------- Contact----------------------------------------- */
+
+
+@media screen and (max-width: 991px) {
+  .navbar ul{
+    display: none;
+  }
+  .intro-profile{
+    flex-direction: column;
+    align-items: space-around;
+    justify-content: center;
+  }
+  .intro-profile > img {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .intro-profile > img {
+    width: 40%;
+  }
+  .form-element{
+    display: block;
+  }
+  .contact{
+    justify-content: space-between;
+  }
+  .contact-form {
+    width: 100%;
+  }
+  input{
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .intro-profile{
+    width: 100%;
+  }
+  .intro-profile > img {
+    width: 40%;
+  }
+}

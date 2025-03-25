@@ -43,12 +43,12 @@ nav {
   width: 50px;
   border-radius: 50px;
 }
-.nav-right{
+.nav-right {
   display: flex;
   align-items: center;
   gap: 20px;
 }
-.dark{
+.dark {
   display: flex;
 }
 .nav-right ul {
@@ -86,18 +86,17 @@ section {
 }
 #about,
 #contact,
-#projects{
+#projects {
   margin-top: 15vh;
 }
 .box {
-  width:80%;
+  width: 80%;
   height: 90%;
   border-radius: 20px;
   padding: 15px 30px;
   background-color: whitesmoke;
-  border:2px solid #0000003b;
+  border: 2px solid #0000003b;
 }
-
 
 .box h1 {
   font-size: 3rem;
@@ -109,7 +108,7 @@ section {
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
   gap: 20px;
 }
@@ -137,7 +136,7 @@ section {
   color: lightskyblue;
 }
 .intro-info .role {
-  font-size: clamp(20px, 3vw, 30px);;
+  font-size: clamp(20px, 3vw, 30px);
   color: rgb(40, 36, 36);
 }
 .intro-para {
@@ -145,7 +144,7 @@ section {
   font-size: clamp(12px, 2vw, 16px);
   color: rgba(0, 0, 0, 0.732);
 }
-.connect-button{
+.connect-button {
   display: flex;
   gap: 10px;
 }
@@ -156,7 +155,7 @@ section {
   font-weight: 600;
   border-radius: 10px;
 }
-.connect-button button a{
+.connect-button button a {
   text-decoration: none;
   color: black;
 }
@@ -170,7 +169,7 @@ section {
   cursor: pointer;
 }
 
-.dark-mode{
+.dark-mode {
   cursor: pointer;
 }
 
@@ -187,7 +186,7 @@ section {
   width: 100%;
   gap: 20px;
 }
-.about-info{
+.about-info {
   width: 100%;
   height: 100%;
   display: flex;
@@ -228,7 +227,7 @@ section {
 }
 
 .skill img {
-  width: 50px; 
+  width: 50px;
   height: 50px;
   object-fit: contain;
   margin-bottom: 8px;
@@ -239,8 +238,6 @@ section {
   font-size: clamp(10px, 2vw, 16px);
   color: #333;
 }
-
-
 
 /*------------------------------------------- About----------------------------------------- */
 
@@ -325,12 +322,11 @@ textarea {
 }
 /*------------------------------------------- Contact----------------------------------------- */
 
-
 @media screen and (max-width: 991px) {
-  .navbar ul{
+  .navbar ul {
     display: none;
   }
-  .intro-profile{
+  .intro-profile {
     flex-direction: column;
     align-items: space-around;
     justify-content: center;
@@ -344,22 +340,22 @@ textarea {
   .intro-profile > img {
     width: 40%;
   }
-  .form-element{
+  .form-element {
     display: block;
   }
-  .contact{
+  .contact {
     justify-content: space-between;
   }
   .contact-form {
     width: 100%;
   }
-  input{
+  input {
     margin-bottom: 10px;
   }
 }
 
 @media screen and (max-width: 576px) {
-  .intro-profile{
+  .intro-profile {
     width: 100%;
   }
   .intro-profile > img {

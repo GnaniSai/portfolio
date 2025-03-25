@@ -73,7 +73,6 @@
                     /></a>
                   </div>
                 </div>
-                
               </div>
             </div>
           </div>
@@ -86,47 +85,46 @@
           <div class="about">
             <div class="about-con">
               <div class="about-info">
-                  <p>
-                    Hey there! I'm a student passionate about web development,
-                    currently on an exciting journey of learning and building
-                    amazing digital experiences. I love exploring new
-                    technologies, solving problems, and constantly improving my
-                    skills in frontend and backend development. Beyond coding,
-                    I'm a huge cricket enthusiast 🏏—whether watching, playing,
-                    or just talking about it! I also have a creative side—I
-                    enjoy dancing, and people say I'm pretty good at it. I'm
-                    always eager to learn, grow, and challenge myself in both
-                    tech and life. Let’s connect and create something awesome
-                    together! 🚀
-                  </p>
-                  <div class="skills">
-                    <h2>My Skills</h2>
-                    <div class="skills-grid">
-                      <div class="skill">
-                        <img src="images/html-icon.svg" alt="HTML" />
-                        <p>HTML</p>
-                      </div>
-                      <div class="skill">
-                        <img src="images/css-icon.svg" alt="CSS" />
-                        <p>CSS</p>
-                      </div>
-                      <div class="skill">
-                        <img src="images/js-icon.svg" alt="JavaScript" />
-                        <p>JavaScript</p>
-                      </div>
-                      <div class="skill">
-                        <img src="images/bootstrap-icon.svg" alt="Bootstrap" />
-                        <p>Bootstrap</p>
-                      </div>
-                      <div class="skill">
-                        <img src="images/nodejs-icon.svg" alt="Node.js" />
-                        <p>Node.js</p>
-                      </div>
-                      <div class="skill">
-                        <img src="images/postgres-icon.svg" alt="PostgreSQL" />
-                        <p>PostgreSQL</p>
-                      </div>
+                <p>
+                  Hey there! I'm a student passionate about web development,
+                  currently on an exciting journey of learning and building
+                  amazing digital experiences. I love exploring new
+                  technologies, solving problems, and constantly improving my
+                  skills in frontend and backend development. Beyond coding, I'm
+                  a huge cricket enthusiast 🏏—whether watching, playing, or
+                  just talking about it! I also have a creative side—I enjoy
+                  dancing, and people say I'm pretty good at it. I'm always
+                  eager to learn, grow, and challenge myself in both tech and
+                  life. Let’s connect and create something awesome together! 🚀
+                </p>
+                <div class="skills">
+                  <h2>My Skills</h2>
+                  <div class="skills-grid">
+                    <div class="skill">
+                      <img src="images/html-icon.svg" alt="HTML" />
+                      <p>HTML</p>
                     </div>
+                    <div class="skill">
+                      <img src="images/css-icon.svg" alt="CSS" />
+                      <p>CSS</p>
+                    </div>
+                    <div class="skill">
+                      <img src="images/js-icon.svg" alt="JavaScript" />
+                      <p>JavaScript</p>
+                    </div>
+                    <div class="skill">
+                      <img src="images/bootstrap-icon.svg" alt="Bootstrap" />
+                      <p>Bootstrap</p>
+                    </div>
+                    <div class="skill">
+                      <img src="images/nodejs-icon.svg" alt="Node.js" />
+                      <p>Node.js</p>
+                    </div>
+                    <div class="skill">
+                      <img src="images/postgres-icon.svg" alt="PostgreSQL" />
+                      <p>PostgreSQL</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -207,10 +205,46 @@
               </form>
             </div>
           </div>
+        </div>
       </section>
     </div>
-    </div>
 
-    <script src="src/index.js"></script>
+    <script>
+      const body = document.querySelector("body");
+      const boxes = document.querySelectorAll(".box");
+      const darkModeToggle = document.querySelector(".dark-mode");
+      const nav = document.querySelector("nav");
+
+      let isDarkMode = false;
+
+      darkModeToggle.addEventListener("click", () => {
+        if (!isDarkMode) {
+          darkModeToggle.src = "images/Dark-mode-icon-white.svg";
+          body.style.backgroundColor = "black";
+          body.style.color = "white";
+          nav.style.backgroundColor = "black";
+          nav.style.color = "white";
+
+          boxes.forEach((box) => {
+            box.style.backgroundColor = "black";
+            box.style.color = "white";
+            box.style.border = "2px solid #ffffff69";
+          });
+        } else {
+          darkModeToggle.src = "images/Dark-mode-icon.svg";
+          body.style.backgroundColor = "white";
+          body.style.color = "black";
+          nav.style.backgroundColor = "white";
+          nav.style.color = "black";
+
+          boxes.forEach((box) => {
+            box.style.backgroundColor = "white";
+            box.style.color = "black";
+            box.style.border = "2px solid #0000003b";
+          });
+        }
+        isDarkMode = !isDarkMode;
+      });
+    </script>
   </body>
 </html>

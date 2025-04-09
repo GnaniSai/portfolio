@@ -44,15 +44,6 @@
               <div class="intro-info">
                 <h2>Hi, I'm <span>Gnaneswar Sai.</span></h2>
                 <p class="role">Full Stack Developer</p>
-                <p class="intro-para">
-                  As a passionate Full Stack Developer, I specialize in building
-                  dynamic, scalable, and user-friendly web applications. With
-                  expertise in front-end and back-end technologies, I create
-                  seamless digital experiences that blend functionality with
-                  aesthetics. My skill set includes modern frameworks,
-                  databases, and cloud solutions, ensuring efficient and
-                  high-performance applications.
-                </p>
                 <div class="connect-button">
                   <button type="submit">
                     <a href="#contact">Let's Connect!</a>
@@ -81,8 +72,8 @@
 
       <section id="about">
         <div class="box">
-          <h1>About</h1>
-          <div class="about">
+          <div class="about-section">
+            <h1>About</h1>
             <div class="about-con">
               <div class="about-info">
                 <p>
@@ -134,9 +125,8 @@
 
       <section id="projects">
         <div class="box">
-          <h1>Projects</h1>
-
-          <div class="projects">
+          <div class="projects-section">
+            <h1>Projects</h1>
             <div class="project-cards">
               <div class="card">
                 <div class="card-image">
@@ -148,11 +138,7 @@
                       YouTube Clone is a responsive web project built using
                       HTML, CSS, and Bootstrap, designed to mimic the core
                       layout and functionality of YouTube. It includes five key
-                      pages: a home page displaying video thumbnails and a
-                      navigation bar, a subscriptions page showcasing content
-                      from followed channels, a watch later page for saved
-                      videos, a channel page highlighting a creator’s profile
-                      and uploads, and...
+                      pages: a home page displaying video thumbnails....
                     </p>
                   </div>
                   <div class="tech-stack">
@@ -174,9 +160,8 @@
 
       <section id="contact">
         <div class="box">
-          <h1>Contact</h1>
-
-          <div class="contact">
+          <div class="contact-section">
+            <h1>Contact</h1>
             <div class="contact-form">
               <form action="#">
                 <div class="form-element">
@@ -253,7 +238,7 @@
 
           boxes.forEach((box) => {
             box.style.backgroundColor = "black";
-            box.style.color = "white";
+            box.style.color = "white !important";
             box.style.border = "2px solid #ffffff69";
           });
         } else {
@@ -265,7 +250,7 @@
 
           boxes.forEach((box) => {
             box.style.backgroundColor = "white";
-            box.style.color = "black";
+            box.style.color = "black !important";
             box.style.border = "2px solid #0000003b";
           });
         }

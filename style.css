@@ -564,7 +564,7 @@ h6 {
 /* Footer */
 .footer {
   background: var(--bg);
-  padding: 3rem 1rem;
+  padding: 2rem 1rem;
   text-align: center;
   border-top: 1px solid var(--border);
 }

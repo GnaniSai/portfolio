@@ -320,6 +320,9 @@
             img.style.filter = "invert(1)";
           });
 
+          // Update role text color
+          document.querySelector(".role").style.color = "white";
+
           // Update boxes and their content
           boxes.forEach((box) => {
             box.style.backgroundColor = "black";
@@ -380,6 +383,14 @@
             .forEach((element) => {
               element.style.color = "black";
             });
+
+          // Reset social icons filter in light mode
+          document.querySelectorAll(".socials img").forEach((img) => {
+            img.style.filter = "none";
+          });
+
+          // Update role text color for light mode
+          document.querySelector(".role").style.color = "black";
 
           // Update boxes and their content
           boxes.forEach((box) => {

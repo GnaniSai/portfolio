@@ -72,8 +72,8 @@
 
       <section id="about">
         <div class="box">
+          <h1>About</h1>
           <div class="about-section">
-            <h1>About</h1>
             <div class="about-con">
               <div class="about-info">
                 <p>
@@ -125,31 +125,102 @@
 
       <section id="projects">
         <div class="box">
+          <h1>Projects</h1>
           <div class="projects-section">
-            <h1>Projects</h1>
             <div class="project-cards">
               <div class="card">
                 <div class="card-image">
-                  <img src="images/Youtube-clone.png" alt="Youtube-clone" />
+                  <img
+                    src="images/Screenshot 2025-04-25 113844.png"
+                    alt="Youtube-clone"
+                  />
                 </div>
                 <div class="project-desc">
                   <div>
                     <p>
-                      YouTube Clone is a responsive web project built using
-                      HTML, CSS, and Bootstrap, designed to mimic the core
-                      layout and functionality of YouTube. It includes five key
-                      pages: a home page displaying video thumbnails....
+                      Halo AI Chatbot is an interactive web app that generates
+                      customizable business proposals in PDF format. Built with
+                      Node.js, Express.js, and PDFKit, users can download or
+                      email proposals using Nodemailer. Local storage manages
+                      session data, ensuring a smooth, responsive experience
+                      across devices.....
                     </p>
                   </div>
                   <div class="tech-stack">
                     <p>HTML</p>
                     <p>CSS</p>
                     <p>BootStrap</p>
+                    <p>Node.js</p>
+                    <p>Express.js</p>
                   </div>
-                  <a
-                    href="https://github.com/GnaniSai/super30/tree/main/youtube-clone"
-                    target="_blank"
-                    ><img src="images/github.png" alt="github" width="30px"
+                  <a href="https://halo-ai.onrender.com/" target="_blank"
+                    ><img
+                      src="images/icons8-arrow-50.png"
+                      alt="icons8-arrow-50"
+                      style="width: 30px"
+                  /></a>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-image">
+                  <img
+                    src="images/Screenshot 2025-04-25 113954.png"
+                    alt="Youtube-clone"
+                  />
+                </div>
+                <div class="project-desc">
+                  <div>
+                    <p>
+                      A responsive clone of the Dripify website built with
+                      React.js, focusing on reusable components and efficient
+                      development through props. The project features a clean UI
+                      design and modular structure for scalability and
+                      maintainability, showcasing expertise in modern,
+                      component-based web development.
+                    </p>
+                  </div>
+                  <div class="tech-stack">
+                    <p>HTML</p>
+                    <p>CSS</p>
+                    <p>React.js</p>
+                  </div>
+                  <a href="https://dripify-clone.vercel.app/" target="_blank"
+                    ><img
+                      src="images/icons8-arrow-50.png"
+                      alt="icons8-arrow-50"
+                      style="width: 30px"
+                  /></a>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-image">
+                  <img
+                    src="images/Screenshot 2025-04-25 114018.png"
+                    alt="Youtube-clone"
+                  />
+                </div>
+                <div class="project-desc">
+                  <div>
+                    <p>
+                      CogniAI is a business analytics website powered by AI,
+                      designed with a Dribbble-inspired aesthetic. Built with
+                      React.js, the site utilizes reusable components and props
+                      for a scalable and modular architecture. The project
+                      focuses on clean visuals, a responsive layout, and an
+                      intuitive user experience to effectively showcase
+                      AI-driven insights.
+                    </p>
+                  </div>
+                  <div class="tech-stack">
+                    <p>HTML</p>
+                    <p>CSS</p>
+                    <p>React.js</p>
+                  </div>
+                  <a href="https://cogni-ai-clone.vercel.app/" target="_blank"
+                    ><img
+                      src="images/icons8-arrow-50.png"
+                      alt="icons8-arrow-50"
+                      style="width: 30px"
                   /></a>
                 </div>
               </div>
@@ -230,29 +301,125 @@
 
       darkModeToggle.addEventListener("click", () => {
         if (!isDarkMode) {
+          // Switch to dark mode
           darkModeToggle.src = "images/Dark-mode-icon-white.svg";
           body.style.backgroundColor = "black";
           body.style.color = "white";
           nav.style.backgroundColor = "black";
           nav.style.color = "white";
 
+          // Update navigation links and logo text
+          document
+            .querySelectorAll(".nav-right ul li a, .logo-img span")
+            .forEach((element) => {
+              element.style.color = "white";
+            });
+
+          // Update boxes and their content
           boxes.forEach((box) => {
             box.style.backgroundColor = "black";
-            box.style.color = "white !important";
+            box.style.color = "white";
             box.style.border = "2px solid #ffffff69";
           });
+
+          // Update form inputs and textarea for dark mode
+          document.querySelectorAll("input, textarea").forEach((element) => {
+            element.style.backgroundColor = "#333";
+            element.style.color = "white";
+            element.style.borderColor = "#555";
+            element.style.setProperty("::placeholder", "#aaa", "important");
+          });
+
+          // Add specific styles for placeholder text
+          const style = document.createElement("style");
+          style.textContent = `
+            input::placeholder, textarea::placeholder {
+              color: #aaa !important;
+            }
+          `;
+          document.head.appendChild(style);
+
+          // Update project cards and their content
+          document.querySelectorAll(".card").forEach((card) => {
+            card.style.backgroundColor = "#1a1a1a";
+            card.style.borderColor = "#555";
+            card.querySelector(".project-desc").style.color = "white";
+            card.querySelectorAll(".tech-stack p").forEach((tech) => {
+              tech.style.color = "#fff";
+              tech.style.backgroundColor = "#333";
+            });
+          });
+
+          // Update skill cards
+          document.querySelectorAll(".skill").forEach((element) => {
+            element.style.backgroundColor = "#1a1a1a";
+            element.style.color = "white";
+          });
+
+          // Update about section text and headings
+          document
+            .querySelectorAll(".about-info p, h1, h2")
+            .forEach((element) => {
+              element.style.color = "white";
+            });
         } else {
+          // Switch to light mode
           darkModeToggle.src = "images/Dark-mode-icon.svg";
           body.style.backgroundColor = "white";
           body.style.color = "black";
           nav.style.backgroundColor = "white";
           nav.style.color = "black";
 
+          // Update navigation links and logo text
+          document
+            .querySelectorAll(".nav-right ul li a, .logo-img span")
+            .forEach((element) => {
+              element.style.color = "black";
+            });
+
+          // Update boxes and their content
           boxes.forEach((box) => {
             box.style.backgroundColor = "white";
-            box.style.color = "black !important";
+            box.style.color = "black";
             box.style.border = "2px solid #0000003b";
           });
+
+          // Update form inputs and textarea for light mode
+          document.querySelectorAll("input, textarea").forEach((element) => {
+            element.style.backgroundColor = "rgb(245, 244, 244)";
+            element.style.color = "black";
+            element.style.borderColor = "rgb(191, 217, 234)";
+          });
+
+          // Remove dark mode placeholder styles
+          const darkModeStyle = document.querySelector("style");
+          if (darkModeStyle) {
+            darkModeStyle.remove();
+          }
+
+          // Update project cards and their content
+          document.querySelectorAll(".card").forEach((card) => {
+            card.style.backgroundColor = "#f5f5f5";
+            card.style.borderColor = "#ddd";
+            card.querySelector(".project-desc").style.color = "black";
+            card.querySelectorAll(".tech-stack p").forEach((tech) => {
+              tech.style.color = "#000";
+              tech.style.backgroundColor = "#e0e0e0";
+            });
+          });
+
+          // Update skill cards
+          document.querySelectorAll(".skill").forEach((element) => {
+            element.style.backgroundColor = "#f5f5f5";
+            element.style.color = "black";
+          });
+
+          // Update about section text and headings
+          document
+            .querySelectorAll(".about-info p, h1, h2")
+            .forEach((element) => {
+              element.style.color = "black";
+            });
         }
         isDarkMode = !isDarkMode;
       });

@@ -369,6 +369,16 @@ textarea {
   .intro-profile > img {
     width: 30%;
   }
+  .project-cards {
+    flex-direction: row;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 10px;
+  }
+  .card {
+    min-width: 300px;
+    width: 300px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -386,6 +396,20 @@ textarea {
   }
   input {
     margin-bottom: 10px;
+  }
+  .project-cards {
+    padding: 5px;
+  }
+  .card {
+    min-width: 280px;
+    width: 280px;
+  }
+  .project-desc {
+    font-size: 12px;
+  }
+  .tech-stack p {
+    font-size: 11px;
+    padding: 3px 8px;
   }
 }
 
@@ -407,6 +431,22 @@ textarea {
     width: 100%;
     font-size: 12px;
   }
+  .skill {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 20%;
+    height: 20%;
+  }
+  
+  .skill img {
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+  }
+  .skill p {
+    display: none;
+  }
 }
-
 

@@ -6,63 +6,155 @@
     <title>Gnaneswar Sai Portfolio</title>
     <link rel="shortcut icon" href="CoolBrio.png" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
   </head>
   <body>
-    <div class="container">
-      <div class="navbar">
-        <nav>
-          <div class="logo-img">
+    <header class="navbar" role="banner">
+      <nav aria-label="Main navigation">
+        <div class="nav-content">
+          <a href="#home" class="logo-img">
             <img src="images/CoolBrio.png" alt="Logo" />
-            <span>Gnaneswar Sai.</span>
-          </div>
-          <div class="nav-right">
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#contact">Contact</a></li>
+            <span>Gnaneswar Sai</span>
+          </a>
+          <button class="mobile-menu-toggle" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+          </button>
+          <div class="nav-wrapper">
+            <ul class="nav-links">
+              <li>
+                <a href="#home" aria-current="page"
+                  ><i class="fa fa-home"></i> Home</a
+                >
+              </li>
+              <li>
+                <a href="#about"><i class="fa fa-user"></i> About</a>
+              </li>
+              <li>
+                <a href="#projects"><i class="fa fa-briefcase"></i> Projects</a>
+              </li>
+              <li>
+                <a href="#contact"><i class="fa fa-envelope"></i> Contact</a>
+              </li>
             </ul>
-            <div class="dark">
-              <img
-                src="images/Dark-mode-icon.svg"
-                alt="Dark Mode Icon"
-                class="dark-mode"
-              />
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="hero-section" aria-label="Hero section">
+        <div class="hero-background">
+          <div class="hero-shape"></div>
+          <div class="hero-blob"></div>
+        </div>
+        <div class="hero-content">
+          <div class="hero-image">
+            <img
+              src="images/Gnani-home-image.png"
+              alt="Gnaneswar Sai portrait"
+              class="profile-img"
+            />
+          </div>
+          <div class="hero-text">
+            <div class="heading-container">
+              <h1 class="reveal-text">
+                Hi, I'm <span class="gradient-text">Gnaneswar Sai</span>
+              </h1>
+            </div>
+            <p class="role reveal-text">Full Stack Developer</p>
+            <div class="hero-buttons reveal-text">
+              <a href="#projects" class="cta-button">View Projects</a>
+              <a href="#contact" class="outline-button">Contact Me</a>
+            </div>
+            <div class="socials" aria-label="Social links">
+              <a
+                href="https://www.instagram.com/hey.gnani?igsh=MWE4ZG43MnNzNnk3YQ=="
+                target="_blank"
+                aria-label="Instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a
+                href="https://linkedin.com/in/sallagundla-gnaneswar-sai-0231562b1"
+                target="_blank"
+                aria-label="LinkedIn"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a
+                href="https://github.com/GnaniSai"
+                target="_blank"
+                aria-label="GitHub"
+                ><i class="fab fa-github"></i
+              ></a>
             </div>
           </div>
-        </nav>
-      </div>
+        </div>
+      </section>
 
-      <section id="home">
-        <div class="box">
-          <div class="intro">
-            <div class="intro-profile">
-              <img
-                src="images/Gnani-home-image.png"
-                alt="Gnaneswar Sai Image"
-              />
-              <div class="intro-info">
-                <h2>Hi, I'm <span>Gnaneswar Sai.</span></h2>
-                <p class="role">Full Stack Developer</p>
-                <div class="connect-button">
-                  <button type="submit">
-                    <a href="#contact">Let's Connect!</a>
-                  </button>
+      <section id="about" class="about-section" aria-label="About me">
+        <div class="section-container">
+          <div class="section-header">
+            <h2><i class="fa fa-user"></i> About Me</h2>
+            <div class="accent-bar"></div>
+          </div>
+          <div class="about-content">
+            <div class="about-text">
+              <p>
+                Hey there! I'm a student passionate about web development,
+                currently on an exciting journey of learning and building
+                amazing digital experiences. I love exploring new technologies,
+                solving problems, and constantly improving my skills in frontend
+                and backend development.
+              </p>
+              <p>
+                Beyond coding, I'm a huge cricket enthusiast 🏏—whether
+                watching, playing, or just talking about it! I also have a
+                creative side—I enjoy dancing, and people say I'm pretty good at
+                it.
+              </p>
+            </div>
+            <div class="skills-container">
+              <h3>My Skills</h3>
+              <div class="skills-grid">
+                <div class="skill-card">
+                  <i class="fab fa-html5"></i>
+                  <span>HTML5</span>
                 </div>
-                <div class="socials">
-                  <a
-                    href="https://www.instagram.com/hey.gnani?igsh=MWE4ZG43MnNzNnk3YQ=="
-                    target="_blank"
-                    ><img src="images/instagram.png" alt="instagram Logo"
-                  /></a>
-                  <a
-                    href="https://linkedin.com/in/sallagundla-gnaneswar-sai-0231562b1"
-                    target="_blank"
-                    ><img src="images/linkedin.png" alt="linkedin Logo"
-                  /></a>
-                  <a href="https://github.com/GnaniSai" target="_blank"
-                    ><img src="images/github.png" alt="github Logo"
-                  /></a>
+                <div class="skill-card">
+                  <i class="fab fa-css3-alt"></i>
+                  <span>CSS3</span>
+                </div>
+                <div class="skill-card">
+                  <i class="fab fa-js"></i>
+                  <span>JavaScript</span>
+                </div>
+                <div class="skill-card">
+                  <i class="fab fa-node-js"></i>
+                  <span>Node.js</span>
+                </div>
+                <div class="skill-card">
+                  <i class="fab fa-react"></i>
+                  <span>React</span>
+                </div>
+                <div class="skill-card">
+                  <i class="fa-solid fa-database"></i>
+                  <span>PostgreSQL</span>
+                </div>
+                <div class="skill-card">
+                  <i class="fab fa-node-js"></i>
+                  <span>Express.js</span>
+                </div>
+                <div class="skill-card">
+                  <i class="fas fa-database"></i>
+                  <span>MongoDB</span>
                 </div>
               </div>
             </div>
@@ -70,374 +162,238 @@
         </div>
       </section>
 
-      <section id="about">
-        <div class="box">
-          <h1>About</h1>
-          <div class="about-section">
-            <div class="about-con">
-              <div class="about-info">
+      <section id="projects" class="projects-section" aria-label="Projects">
+        <div class="section-container">
+          <div class="section-header">
+            <h2><i class="fa fa-briefcase"></i> Projects</h2>
+            <div class="accent-bar"></div>
+          </div>
+          <div class="projects-grid">
+            <article class="project-card reveal-card">
+              <div class="project-image">
+                <img
+                  src="images/haloai-page.png"
+                  alt="Halo AI Chatbot screenshot"
+                />
+              </div>
+              <div class="project-content">
+                <h3>Halo AI Chatbot</h3>
                 <p>
-                  Hey there! I'm a student passionate about web development,
-                  currently on an exciting journey of learning and building
-                  amazing digital experiences. I love exploring new
-                  technologies, solving problems, and constantly improving my
-                  skills in frontend and backend development. Beyond coding, I'm
-                  a huge cricket enthusiast 🏏—whether watching, playing, or
-                  just talking about it! I also have a creative side—I enjoy
-                  dancing, and people say I'm pretty good at it. I'm always
-                  eager to learn, grow, and challenge myself in both tech and
-                  life. Let’s connect and create something awesome together! 🚀
+                  Interactive web app for generating customizable business
+                  proposals in PDF format. Built with Node.js, Express.js, and
+                  PDFKit.
                 </p>
-                <div class="skills">
-                  <h2>My Skills</h2>
-                  <div class="skills-grid">
-                    <div class="skill">
-                      <img src="images/html-icon.svg" alt="HTML" />
-                      <p>HTML</p>
-                    </div>
-                    <div class="skill">
-                      <img src="images/css-icon.svg" alt="CSS" />
-                      <p>CSS</p>
-                    </div>
-                    <div class="skill">
-                      <img src="images/js-icon.svg" alt="JavaScript" />
-                      <p>JavaScript</p>
-                    </div>
-                    <div class="skill">
-                      <img src="images/bootstrap-icon.svg" alt="Bootstrap" />
-                      <p>Bootstrap</p>
-                    </div>
-                    <div class="skill">
-                      <img src="images/nodejs-icon.svg" alt="Node.js" />
-                      <p>Node.js</p>
-                    </div>
-                    <div class="skill">
-                      <img src="images/postgres-icon.svg" alt="PostgreSQL" />
-                      <p>PostgreSQL</p>
-                    </div>
-                  </div>
+                <div class="tech-stack">
+                  <span><i class="fab fa-html5"></i> HTML</span>
+                  <span><i class="fab fa-css3-alt"></i> CSS</span>
+                  <span><i class="fab fa-node-js"></i> Node.js</span>
+                </div>
+                <div class="project-links">
+                  <a
+                    href="https://halo-ai.onrender.com/"
+                    target="_blank"
+                    class="project-link"
+                    aria-label="Live Demo"
+                  >
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                  <a
+                    href="https://github.com/GnaniSai/halo-ai"
+                    target="_blank"
+                    class="project-link"
+                    aria-label="View Code"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
                 </div>
               </div>
-            </div>
+            </article>
+
+            <article class="project-card reveal-card">
+              <div class="project-image">
+                <img
+                  src="images/dripify-page.png"
+                  alt="Dripify Clone screenshot"
+                />
+              </div>
+              <div class="project-content">
+                <h3>Dripify Clone</h3>
+                <p>
+                  Responsive clone of the Dripify website built with React.js,
+                  focusing on reusable components and efficient development.
+                </p>
+                <div class="tech-stack">
+                  <span><i class="fab fa-html5"></i> HTML</span>
+                  <span><i class="fab fa-css3-alt"></i> CSS</span>
+                  <span><i class="fab fa-react"></i> React</span>
+                </div>
+                <div class="project-links">
+                  <a
+                    href="https://dripify-clone.vercel.app/"
+                    target="_blank"
+                    class="project-link"
+                    aria-label="Live Demo"
+                  >
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                  <a
+                    href="https://github.com/GnaniSai/dripify-clone"
+                    target="_blank"
+                    class="project-link"
+                    aria-label="View Code"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card reveal-card">
+              <div class="project-image">
+                <img
+                  src="images/cogniai-page.png"
+                  alt="CogniAI screenshot"
+                />
+              </div>
+              <div class="project-content">
+                <h3>CogniAI</h3>
+                <p>
+                  Business analytics website powered by AI, designed with a
+                  Dribbble-inspired aesthetic. Built with React.js.
+                </p>
+                <div class="tech-stack">
+                  <span><i class="fab fa-html5"></i> HTML</span>
+                  <span><i class="fab fa-css3-alt"></i> CSS</span>
+                  <span><i class="fab fa-react"></i> React</span>
+                </div>
+                <div class="project-links">
+                  <a
+                    href="https://cogni-ai-clone.vercel.app/"
+                    target="_blank"
+                    class="project-link"
+                    aria-label="Live Demo"
+                  >
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                  <a
+                    href="https://github.com/GnaniSai/cogni-ai-clone"
+                    target="_blank"
+                    class="project-link"
+                    aria-label="View Code"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
           </div>
         </div>
       </section>
 
-      <section id="projects">
-        <div class="box">
-          <h1>Projects</h1>
-          <div class="projects-section">
-            <div class="project-cards">
-              <div class="card">
-                <div class="card-image">
-                  <img
-                    src="images/Screenshot 2025-04-25 113844.png"
-                    alt="Youtube-clone"
+      <section id="contact" class="contact-section" aria-label="Contact">
+        <div class="section-container">
+          <div class="section-header">
+            <h2><i class="fa fa-envelope"></i> Contact</h2>
+            <div class="accent-bar"></div>
+          </div>
+          <div class="contact-container">
+            <form class="contact-form" action="#" autocomplete="off">
+              <div class="form-grid">
+                <div class="form-group">
+                  <label for="fname">First Name</label>
+                  <input type="text" id="fname" placeholder="John" required />
+                </div>
+                <div class="form-group">
+                  <label for="lname">Last Name</label>
+                  <input type="text" id="lname" placeholder="Doe" required />
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    placeholder="john@example.com"
+                    required
                   />
                 </div>
-                <div class="project-desc">
-                  <div>
-                    <p>
-                      Halo AI Chatbot is an interactive web app that generates
-                      customizable business proposals in PDF format. Built with
-                      Node.js, Express.js, and PDFKit, users can download or
-                      email proposals using Nodemailer. Local storage manages
-                      session data, ensuring a smooth, responsive experience
-                      across devices.....
-                    </p>
-                  </div>
-                  <div class="tech-stack">
-                    <p>HTML</p>
-                    <p>CSS</p>
-                    <p>BootStrap</p>
-                    <p>Node.js</p>
-                    <p>Express.js</p>
-                  </div>
-                  <a href="https://halo-ai.onrender.com/" target="_blank"
-                    ><img
-                      src="images/icons8-arrow-50.png"
-                      alt="icons8-arrow-50"
-                      style="width: 30px"
-                  /></a>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-image">
-                  <img
-                    src="images/Screenshot 2025-04-25 113954.png"
-                    alt="Youtube-clone"
+                <div class="form-group">
+                  <label for="phone">Phone</label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    placeholder="+1 (234) 567-8900"
                   />
                 </div>
-                <div class="project-desc">
-                  <div>
-                    <p>
-                      A responsive clone of the Dripify website built with
-                      React.js, focusing on reusable components and efficient
-                      development through props. The project features a clean UI
-                      design and modular structure for scalability and
-                      maintainability, showcasing expertise in modern,
-                      component-based web development.
-                    </p>
-                  </div>
-                  <div class="tech-stack">
-                    <p>HTML</p>
-                    <p>CSS</p>
-                    <p>React.js</p>
-                  </div>
-                  <a href="https://dripify-clone.vercel.app/" target="_blank"
-                    ><img
-                      src="images/icons8-arrow-50.png"
-                      alt="icons8-arrow-50"
-                      style="width: 30px"
-                  /></a>
-                </div>
               </div>
-              <div class="card">
-                <div class="card-image">
-                  <img
-                    src="images/Screenshot 2025-04-25 114018.png"
-                    alt="Youtube-clone"
-                  />
-                </div>
-                <div class="project-desc">
-                  <div>
-                    <p>
-                      CogniAI is a business analytics website powered by AI,
-                      designed with a Dribbble-inspired aesthetic. Built with
-                      React.js, the site utilizes reusable components and props
-                      for a scalable and modular architecture. The project
-                      focuses on clean visuals, a responsive layout, and an
-                      intuitive user experience to effectively showcase
-                      AI-driven insights.
-                    </p>
-                  </div>
-                  <div class="tech-stack">
-                    <p>HTML</p>
-                    <p>CSS</p>
-                    <p>React.js</p>
-                  </div>
-                  <a href="https://cogni-ai-clone.vercel.app/" target="_blank"
-                    ><img
-                      src="images/icons8-arrow-50.png"
-                      alt="icons8-arrow-50"
-                      style="width: 30px"
-                  /></a>
-                </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  rows="6"
+                  placeholder="Your message here..."
+                  required
+                ></textarea>
               </div>
-            </div>
+              <button type="submit" class="submit-button">Send Message</button>
+            </form>
           </div>
         </div>
       </section>
+    </main>
 
-      <section id="contact">
-        <div class="box">
-          <div class="contact-section">
-            <h1>Contact</h1>
-            <div class="contact-form">
-              <form action="#">
-                <div class="form-element">
-                  <div>
-                    <input
-                      type="text"
-                      class="fname"
-                      id="fname"
-                      placeholder="First Name"
-                    />
-                  </div>
-                  <div>
-                    <input
-                      type="text"
-                      class="lname"
-                      id="lname"
-                      placeholder="Last Name"
-                    />
-                  </div>
-                </div>
-
-                <div class="form-element">
-                  <div>
-                    <input
-                      type="email"
-                      name="email"
-                      id="email"
-                      placeholder="Email Address"
-                    />
-                  </div>
-                  <div>
-                    <input
-                      type="tel"
-                      name="phone"
-                      id="phone"
-                      placeholder="Mobile Number"
-                    />
-                  </div>
-                </div>
-                <div>
-                  <textarea
-                    name="comment"
-                    id="comment"
-                    placeholder="Your Message!"
-                    cols="30"
-                    rows="7"
-                  ></textarea>
-                </div>
-                <div class="submit-button">
-                  <button type="submit">Submit</button>
-                </div>
-              </form>
-            </div>
-          </div>
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-socials">
+          <a
+            href="https://www.instagram.com/hey.gnani?igsh=MWE4ZG43MnNzNnk3YQ=="
+            target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a
+            href="https://linkedin.com/in/sallagundla-gnaneswar-sai-0231562b1"
+            target="_blank"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a href="https://github.com/GnaniSai" target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
         </div>
-      </section>
-    </div>
+        <p class="footer-copyright">
+          &copy; 2024 Gnaneswar Sai. All rights reserved.
+        </p>
+        <p class="footer-credit">
+          Made with <span class="heart">❤️</span> by Gnaneswar Sai
+        </p>
+      </div>
+    </footer>
 
     <script>
-      const body = document.querySelector("body");
-      const boxes = document.querySelectorAll(".box");
-      const darkModeToggle = document.querySelector(".dark-mode");
-      const nav = document.querySelector("nav");
+      // Mobile menu toggle
+      const menuToggle = document.querySelector(".mobile-menu-toggle");
+      const navWrapper = document.querySelector(".nav-wrapper");
 
-      let isDarkMode = false;
-
-      darkModeToggle.addEventListener("click", () => {
-        if (!isDarkMode) {
-          // Switch to dark mode
-          darkModeToggle.src = "images/Dark-mode-icon-white.svg";
-          body.style.backgroundColor = "black";
-          body.style.color = "white";
-          nav.style.backgroundColor = "black";
-          nav.style.color = "white";
-
-          // Update navigation links and logo text
-          document
-            .querySelectorAll(".nav-right ul li a, .logo-img span")
-            .forEach((element) => {
-              element.style.color = "white";
-            });
-
-          // Make social icons visible in dark mode
-          document.querySelectorAll(".socials img").forEach((img) => {
-            img.style.filter = "invert(1)";
-          });
-
-          // Update role text color
-          document.querySelector(".role").style.color = "white";
-
-          // Update boxes and their content
-          boxes.forEach((box) => {
-            box.style.backgroundColor = "black";
-            box.style.color = "white";
-            box.style.border = "2px solid #ffffff69";
-          });
-
-          // Update form inputs and textarea for dark mode
-          document.querySelectorAll("input, textarea").forEach((element) => {
-            element.style.backgroundColor = "#333";
-            element.style.color = "white";
-            element.style.borderColor = "#555";
-            element.style.setProperty("::placeholder", "#aaa", "important");
-          });
-
-          // Add specific styles for placeholder text
-          const style = document.createElement("style");
-          style.textContent = `
-            input::placeholder, textarea::placeholder {
-              color: #aaa !important;
-            }
-          `;
-          document.head.appendChild(style);
-
-          // Update project cards and their content
-          document.querySelectorAll(".card").forEach((card) => {
-            card.style.backgroundColor = "#1a1a1a";
-            card.style.borderColor = "#555";
-            card.querySelector(".project-desc").style.color = "white";
-            card.querySelectorAll(".tech-stack p").forEach((tech) => {
-              tech.style.color = "#fff";
-              tech.style.backgroundColor = "#333";
-            });
-          });
-
-          // Update skill cards
-          document.querySelectorAll(".skill, .role").forEach((element) => {
-            element.style.color = "white";
-          });
-
-          // Update about section text and headings
-          document
-            .querySelectorAll(".about-info p, h1, h2")
-            .forEach((element) => {
-              element.style.color = "white";
-            });
-        } else {
-          // Switch to light mode
-          darkModeToggle.src = "images/Dark-mode-icon.svg";
-          body.style.backgroundColor = "white";
-          body.style.color = "black";
-          nav.style.backgroundColor = "white";
-          nav.style.color = "black";
-
-          // Update navigation links and logo text
-          document
-            .querySelectorAll(".nav-right ul li a, .logo-img span")
-            .forEach((element) => {
-              element.style.color = "black";
-            });
-
-          // Reset social icons filter in light mode
-          document.querySelectorAll(".socials img").forEach((img) => {
-            img.style.filter = "none";
-          });
-
-          // Update role text color for light mode
-          document.querySelector(".role").style.color = "black";
-
-          // Update boxes and their content
-          boxes.forEach((box) => {
-            box.style.backgroundColor = "white";
-            box.style.color = "black";
-            box.style.border = "2px solid #0000003b";
-          });
-
-          // Update form inputs and textarea for light mode
-          document.querySelectorAll("input, textarea").forEach((element) => {
-            element.style.backgroundColor = "rgb(245, 244, 244)";
-            element.style.color = "black";
-            element.style.borderColor = "rgb(191, 217, 234)";
-          });
-
-          // Remove dark mode placeholder styles
-          const darkModeStyle = document.querySelector("style");
-          if (darkModeStyle) {
-            darkModeStyle.remove();
-          }
-
-          // Update project cards and their content
-          document.querySelectorAll(".card").forEach((card) => {
-            card.style.backgroundColor = "#f5f5f5";
-            card.style.borderColor = "#ddd";
-            card.querySelector(".project-desc").style.color = "black";
-            card.querySelectorAll(".tech-stack p").forEach((tech) => {
-              tech.style.color = "#000";
-              tech.style.backgroundColor = "#e0e0e0";
-            });
-          });
-
-          // Update skill cards
-          document.querySelectorAll(".skill").forEach((element) => {
-            element.style.backgroundColor = "#f5f5f5";
-            element.style.color = "black";
-          });
-
-          // Update about section text and headings
-          document
-            .querySelectorAll(".about-info p, h1, h2")
-            .forEach((element) => {
-              element.style.color = "black";
-            });
-        }
-        isDarkMode = !isDarkMode;
+      menuToggle.addEventListener("click", () => {
+        menuToggle.classList.toggle("active");
+        navWrapper.classList.toggle("active");
       });
+
+      // Intersection Observer for reveal animations
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: "0px",
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          }
+        });
+      }, observerOptions);
+
+      document
+        .querySelectorAll(".reveal-text, .project-card, .skill-card")
+        .forEach((el) => observer.observe(el));
     </script>
   </body>
 </html>

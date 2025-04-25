@@ -550,8 +550,10 @@ textarea:focus {
   overflow: hidden;
 }
 
-.footer-socials a i, .socials a i {
-  background: linear-gradient(135deg,
+.footer-socials a i,
+.socials a i {
+  background: linear-gradient(
+    135deg,
     rgba(6, 182, 212, 0.2) 0%,
     rgba(59, 130, 246, 0.2) 100%
   );
@@ -560,7 +562,6 @@ textarea:focus {
   color: var(--text);
   transition: all 0.3s ease;
 }
-
 
 .socials a:hover i,
 .footer-socials a:hover i {

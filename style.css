@@ -258,16 +258,8 @@ section {
 
 .project-cards::-webkit-scrollbar {
   height: none;
-}
-
-.project-cards::-webkit-scrollbar-track {
-  background: #f1f1f1;
-  border-radius: 4px;
-}
-
-.project-cards::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 4px;
+  width: none;
+  background: none;
 }
 
 .card {
@@ -444,6 +436,9 @@ textarea {
   .card {
     width: 100%;
     font-size: 12px;
+  }
+  .project-cards{
+    margin-top: 20px;
   }
   .skill {
     background: white;

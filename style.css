@@ -648,7 +648,19 @@ textarea:focus {
 /* Mobile Responsiveness */
 @media (max-width: 991px) {
   .hero-text h1 {
-    font-size: 3rem;
+    font-size: 2.25rem;
+  }
+
+  .role {
+    font-size: 1.125rem;
+  }
+
+  .about-text p {
+    font-size: 0.95rem;
+  }
+
+  .project-content h3 {
+    font-size: 1.1rem;
   }
 
   .hero-content {
@@ -675,14 +687,31 @@ textarea:focus {
     width: 240px;
     height: 240px;
   }
+
+  p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .project-description {
+    font-size: 0.95rem;
+  }
+
+  .contact-section p {
+    font-size: 0.95rem;
+  }
 }
 
 @media (max-width: 768px) {
   .hero-text h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     white-space: normal;
     text-align: center;
     width: 100%;
+  }
+
+  .section-header h2 {
+    font-size: 2rem;
   }
 
   .hero-text {
@@ -694,13 +723,19 @@ textarea:focus {
     gap: 2rem;
     padding: 0rem;
   }
+  .about-text {
+    padding: 1rem;
+  }
+  .skills-container {
+    padding: 1rem;
+  }
   .hero-content {
     flex-direction: column;
   }
 
   .profile-img {
-    width: 200px;
-    height: 200px;
+    width: 160px;
+    height: 160px;
   }
 
   .mobile-menu-toggle {
@@ -744,13 +779,32 @@ textarea:focus {
 
 @media (max-width: 480px) {
   .hero-text h1 {
-    font-size: 2rem;
+    font-size: 1.75rem;
     white-space: normal;
   }
 
-  .profile-img {
-    width: 180px;
-    height: 180px;
+  .role {
+    font-size: 1rem;
+  }
+
+  .section-header h2 {
+    font-size: 1.5rem;
+  }
+
+  .about-text p {
+    font-size: 0.9rem;
+  }
+
+  .project-content h3 {
+    font-size: 1rem;
+  }
+
+  .project-content p {
+    font-size: 0.9rem;
+  }
+
+  .tech-stack span {
+    font-size: 0.8rem;
   }
 
   .contact-section {
@@ -764,5 +818,58 @@ textarea:focus {
   .submit-button {
     font-size: 1rem;
     padding: 0.5rem 1rem;
+  }
+}
+
+/* Responsive font sizes for smaller screens */
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.75rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  p,
+  li,
+  a {
+    font-size: 1rem;
+  }
+  .section-title {
+    font-size: 1.8rem;
+  }
+  .project-title {
+    font-size: 1.4rem;
+  }
+  .nav-links a {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 1.75rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 1.25rem;
+  }
+  p,
+  li,
+  a {
+    font-size: 0.9rem;
+  }
+  .section-title {
+    font-size: 1.6rem;
+  }
+  .project-title {
+    font-size: 1.2rem;
+  }
+  .nav-links a {
+    font-size: 0.85rem;
   }
 }

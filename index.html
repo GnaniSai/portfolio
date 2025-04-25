@@ -315,6 +315,11 @@
               element.style.color = "white";
             });
 
+          // Make social icons visible in dark mode
+          document.querySelectorAll(".socials img").forEach((img) => {
+            img.style.filter = "invert(1)";
+          });
+
           // Update boxes and their content
           boxes.forEach((box) => {
             box.style.backgroundColor = "black";

@@ -241,24 +241,38 @@ section {
 
 .projects-section {
   width: 100%;
-  height: 100%;
   display: flex;
-  flex-direction: row;
   align-items: center;
-  flex-wrap: nowrap;
+  justify-content: center;
+  padding: 0 10px;
 }
+
 .project-cards {
   display: flex;
-  justify-content: center;
-  max-width: 100%;
-  height: 100%;
   gap: 20px;
   overflow-x: auto;
-  padding: 10px;
+  padding: 20px 10px 20px 20px;
+  margin-right: 10px;
+  width: calc(100% + 10px);
 }
+
+.project-cards::-webkit-scrollbar {
+  height: none;
+}
+
+.project-cards::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.project-cards::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
 .card {
-  width: 100%;
-  height: 80%;
+  min-width: 300px;
+  scroll-snap-align: start;
   overflow: hidden;
   font-size: 13px;
   border: 3px solid black;
@@ -439,7 +453,7 @@ textarea {
     width: 20%;
     height: 20%;
   }
-  
+
   .skill img {
     width: 25px;
     height: 25px;
@@ -449,4 +463,3 @@ textarea {
     display: none;
   }
 }
-
